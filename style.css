@@ -1,0 +1,159 @@
+/* Basic Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e3f2fd; /* Light blue background */
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #1e88e5; /* Blue */
+  color: #fff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #bbdefb; /* Light blue hover */
+}
+
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.auth-container input {
+  padding: 12px;
+  margin: 10px;
+  width: 250px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.auth-container button {
+  width: 100%;
+  background-color: #1e88e5; /* Blue */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.auth-container button:hover {
+  background-color: #1976d2; /* Darker blue */
+}
+
+#dashboard {
+  padding: 30px;
+  max-width: 900px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.journal-entry-form {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+  width: 100%;
+  height: 180px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  resize: none;
+  box-sizing: border-box;
+}
+
+.mood-selector {
+  margin-bottom: 15px;
+}
+
+.mood-selector select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  background-color: #fafafa;
+}
+
+button {
+  background-color: #1e88e5; /* Blue */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #1976d2; /* Darker blue */
+}
+
+#past-entries {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#entries-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#entries-list li {
+  background-color: #bbdefb; /* Light blue background for each entry */
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #1e88e5; /* Blue */
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.notification {
+  background-color: #64b5f6; /* Blue notification */
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}

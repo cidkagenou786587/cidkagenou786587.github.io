@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Journaling App</title>
+  <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">JournalApp</div>
+    <div class="nav-links">
+      <a href="#home" onclick="showDashboard()">Home</a>
+      <a href="#login" onclick="showLogin()">Log In</a>
+      <a href="#signup" onclick="showSignUp()">Sign Up</a>
+      <a href="#logout" onclick="logOut()">Log Out</a>
+    </div>
+  </nav>
+
+  <!-- Notification Area -->
+  <div id="notification-area" class="notification" style="display: none;"></div>
+
+  <!-- Sign Up Form -->
+  <div id="signup-form" class="auth-container" style="display: none;">
+    <h2>Sign Up</h2>
+    <input type="text" id="signup-username" placeholder="Username">
+    <input type="password" id="signup-password" placeholder="Password">
+    <button type="button" onclick="signUp()">Sign Up</button>
+  </div>
+
+  <!-- Log In Form -->
+  <div id="login-form" class="auth-container" style="display: none;">
+    <h2>Log In</h2>
+    <input type="text" id="login-username" placeholder="Username">
+    <input type="password" id="login-password" placeholder="Password">
+    <button type="button" onclick="logIn()">Log In</button>
+  </div>
+
+  <!-- Dashboard Section (Main Page) -->
+  <section id="dashboard" style="display: none;">
+    <h2>Welcome to your Journaling Dashboard</h2>
+
+    <!-- Journal Entry Form -->
+    <div class="journal-entry-form">
+      <textarea id="journal-entry" placeholder="Write your thoughts here..."></textarea>
+      <div class="mood-selector">
+        <label for="mood">Mood:</label>
+        <select id="mood">
+          <option value="happy">Happy</option>
+          <option value="sad">Sad</option>
+          <option value="neutral">Neutral</option>
+          <option value="angry">Angry</option>
+          <option value="excited">Excited</option>
+          <option value="anxious">Anxious</option>
+          <option value="relaxed">Relaxed</option>
+          <option value="grateful">Grateful</option>
+          <option value="hopeful">Hopeful</option>
+          <option value="bored">Bored</option>
+        </select>
+      </div>
+
+      <button type="button" id="save-entry-button" onclick="saveEntry()">Save Entry</button>
+    </div>
+
+    <!-- List of Past Entries -->
+    <div id="past-entries">
+      <h3>Past Entries</h3>
+      <ul id="entries-list">
+        <!-- Entries will be listed here -->
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 JournalApp. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script> <!-- Link to external JavaScript -->
+</body>
+</html>
